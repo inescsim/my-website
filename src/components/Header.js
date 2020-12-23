@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from './Link';
-import '../App.css'; 
+import '../App.scss'; 
 
 const Header = () => {
     return (
