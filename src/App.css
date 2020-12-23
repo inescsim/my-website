@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Dancing Script', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.light-theme, .dark-theme {
+  height: 100vh;
+}
+
+.light-theme {
+  background-color: #EDEAE5;
+}
+
+.light-theme h3 {
+  color: #026670;
+}
+
+.light-theme p {
+  color: #026670;
+  font-size: large;
+}
+
+.light-theme i {
+  background-color: #026670; 
+  color: #9FEDD7;
+}
+
+.dark-theme {
+  background-color: #112D32;
+}
+
+.dark-theme h3 {
+  color: #88BDBC;
+}
+
+.dark-theme p {
+  color: #88BDBC;
+  font-size: large;
+}
+
+.dark-theme i {
+  background-color: #6E6658; 
+  color: #EDEAE5;
+}
+
+a {
+  color: #FCE181;
+  text-decoration: none;
+  font-size: large;
+  border-radius: 50px;
+}
+
+nav {
+  padding: 10px;
+
+  @media (min-width: 600px){
+      padding: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media (min-width: 600px){
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.fullwidth {
+  flex: 1 0 100%;
+  justify-content: center;
+
+  @media (min-width: 600px){
+      flex: 0 1 auto;
   }
 }
