@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Link = ({ href, children}) => {
+const Link = ({ href, currentPage, onLinkClick, children}) => {
     const onClick = (event) => {
         if(event.metaKey || event.ctrlKey) {
             return;
@@ -11,9 +11,11 @@ const Link = ({ href, children}) => {
 
         const navEvent = new PopStateEvent('popstate');
         window.dispatchEvent(navEvent);
+
+        onLinkClick(href);
     };
 
-    return <a onClick={onClick} href={href}>{children}</a>
+    return <a onClick={onClick} href={href} className={`underline ${href === currentPage ? "active" : ""}`}>{children}</a>
 };
 
 export default Link;
