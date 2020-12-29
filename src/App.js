@@ -3,10 +3,12 @@ import './App.scss';
 import Route from './components/Route';
 import Section from './components/Section';
 import Header from './components/Header';
+import Settings from './components/Settings';
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
   const theme = darkTheme ? "dark" : "light";
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const [useEnglishlanguage, setUseEnglishLanguage] = useState(true);
   const [currentPage, setCurrentPage] = useState("/");
 
@@ -64,7 +66,9 @@ function App() {
         <div className="left-section">
           {renderedRoutes}
         </div>
-        <div className="right-section"></div>
+        <div className="right-section">
+          <Settings open={settingsOpen} onSettingsClick={setSettingsOpen}/>
+        </div>
       </div>
       <footer></footer>
     </div>
