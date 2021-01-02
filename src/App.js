@@ -5,33 +5,36 @@ import Section from './components/Section';
 import Header from './components/Header';
 import Settings from './components/Settings';
 
+import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
+
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
   const theme = darkTheme ? "dark" : "light";
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [useEnglishlanguage, setUseEnglishLanguage] = useState(true);
+  const [useEnglishLanguage, setUseEnglishLanguage] = useState(true);
   const [currentPage, setCurrentPage] = useState("/");
 
   const content = [
     {
-      url: "/", title: useEnglishlanguage ? "Welcome!" : "Olá!", id: "home",
-      content: useEnglishlanguage ? ["My name is Inês and this is my website."] : ["O meu nome é Inês e este é o meu site."]
+      url: "/", title: useEnglishLanguage ? "Welcome!" : "Olá!", id: "home", 
+      content: <AboutMe useEnglishLanguage={useEnglishLanguage} />
     },
     {
-      url: "/about", title: useEnglishlanguage ? "About me" : "Sobre mim", id: "about",
-      content: useEnglishlanguage ? ["CONTENT."] : ["CONTENT."]
+      url: "/about", title: useEnglishLanguage ? "About me" : "Sobre mim", id: "about", 
+      content: <AboutMe useEnglishLanguage={useEnglishLanguage} />
     },
     {
-      url: "/experience", title: useEnglishlanguage ? "Experience" : "Experiência", id: "experience",
-      content: useEnglishlanguage ? ["CONTENT."] : ["CONTENT."]
+      url: "/experience", title: useEnglishLanguage ? "Experience" : "Experiência", id: "experience", 
+      content: <Experience useEnglishLanguage={useEnglishLanguage} />
     },
     {
-      url: "/skills", title: useEnglishlanguage ? "Skills" : "Competências", id: "skills",
-      content: useEnglishlanguage ? ["CONTENT."] : ["CONTENT."],
+      url: "/skills", title: useEnglishLanguage ? "Skills" : "Competências", id: "skills", 
+      content: <AboutMe  useEnglishLanguage={useEnglishLanguage} />
     },
     {
-      url: "/contact", title: useEnglishlanguage ? "Contact" : "Contacto", id: "contact",
-      content: useEnglishlanguage ? ["CONTENT."] : ["CONTENT."]
+      url: "/contact", title: useEnglishLanguage ? "Contact" : "Contacto", id: "contact", 
+      content: <AboutMe useEnglishLanguage={useEnglishLanguage} />
     }
   ];
 
@@ -47,29 +50,30 @@ function App() {
       setCurrentPage(window.location.pathname);
     }
   }, [currentPage]);
+
   const renderedRoutes = content.map((c) => {
       return (
         <Route path={c.url} key={`${c.id}-route`}>
-            <Section title={c.title} key={`${c.id}-section`} id={c.id}>
-                {c.content}
+            <Section title={c.title} key={`${c.id}-section`}>
+              {c.content}
             </Section>
         </Route>
       );
-  });
-
-  return (
-    <div className={`${theme}-theme`}>
+    });
+    
+    return (
+      <div className={`${theme}-theme`}>
       <nav className="navbar">
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </nav>
       <div id="main">
         <div className="left-section">
           {renderedRoutes}
         </div>
         <div className="right-section">
-          <Settings open={settingsOpen} onSettingsClick={setSettingsOpen}/>
+          <Settings open={settingsOpen} onSettingsClick={setSettingsOpen} useEnglishLanguage={useEnglishLanguage} setUseEnglishLanguage={setUseEnglishLanguage} darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
         </div>
-      </div>
+      </div> 
       <footer></footer>
     </div>
   );
