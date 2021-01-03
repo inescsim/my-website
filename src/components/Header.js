@@ -15,12 +15,6 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 <li className="nav-item">
                     <Link href="/experience" currentPage={currentPage} onLinkClick={setCurrentPage}>Experience</Link>
                 </li>
-                <li className="nav-item">
-                    <Link href="/skills" currentPage={currentPage} onLinkClick={setCurrentPage}>Skills</Link>
-                </li>
-                <li className="nav-item">
-                    <Link href="/contact" currentPage={currentPage} onLinkClick={setCurrentPage}>Contact</Link>
-                </li>
             </ul>
         </React.Fragment>
     );
