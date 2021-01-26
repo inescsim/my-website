@@ -1,25 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss'; 
 import Route from './components/Route';
-import Header from './components/Header';
+import Home from './components/Home';
 import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
 
 function App() {
-  const [darkTheme, setDarkTheme] = useState(true);
+  const [darkTheme, setDarkTheme] = useState(false);
   const theme = darkTheme ? "dark" : "light";
   const themeIcon = darkTheme ? "sun" : "moon";
   const [currentPage, setCurrentPage] = useState("/");
 
   const content = [
     {
-      url: "/", id: "home", content: ""
+      url: "/", id: "home", content: <Home />
     },
     {
       url: "/about", id: "about", content: <AboutMe />
-    },
-    {
-      url: "/experience", id: "experience", content: <Experience />
     }
   ];
 
@@ -47,14 +43,13 @@ function App() {
   return (
     <div className={`${theme}-theme`}>
       <nav className="navbar">
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <a href="/"><i className="large info icon"></i></a>
+        <a href="/"><i className={`large ${themeIcon} icon`} onClick={() => setDarkTheme(!darkTheme)}></i></a>
       </nav>
       <div className="main-section">
         {renderedRoutes}
-      </div> 
-      <footer>
-          <i className={`${themeIcon} icon`} onClick={() => setDarkTheme(!darkTheme)}></i>
-      </footer>
+      </div>
+      <div className="footer"></div>
     </div>
   );
 }
