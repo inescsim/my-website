@@ -126,6 +126,11 @@ p {
 
 .about-me-content {
   grid-area: 1 / 2 / 2 / 3;
+
+  a {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 1.1rem;
+  }
 }
 
 .about-me-divider {
@@ -149,7 +154,7 @@ p {
   margin-bottom: 10px;
 }
 
-.experience-item-date-location {
+.experience-item-icons {
   margin-bottom: 5px;
   display: flex;
   flex: 1;
@@ -158,7 +163,7 @@ p {
 
 .experience-item-content {
   font-size: 1rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .download-cv {

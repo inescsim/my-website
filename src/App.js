@@ -30,7 +30,7 @@ function App() {
   return (
     <div className={`${theme}-theme`}>
       <nav className="navbar">
-        <Link href="/"><i className="large info icon rotate"></i></Link>
+        <Link href="/"><i className="large home icon rotate"></i></Link>
         <i className={`large ${themeIcon} icon rotate`} onClick={() => setDarkTheme(!darkTheme)}></i>
       </nav>
       <div className="main-section">
