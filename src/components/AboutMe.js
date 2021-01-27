@@ -9,9 +9,9 @@ const AboutMe = () => {
             <div className="about-me-avatar">
                 <img alt="" src={avatar}/>
                 <p className="about-me-icons">
-                    <a href="mailto:ines.csim@gmail.com" alt=""><i className="large at icon"></i></a>
-                    <a href="https://www.linkedin.com/in/inescsim/" alt="" target="_blank" rel="noopener noreferrer"><i className="large linkedin icon"></i></a>
-                    <a href="https://github.com/inescsim" alt="" target="_blank" rel="noopener noreferrer"><i className="large github icon"></i></a>
+                    <a href="mailto:ines.csim@gmail.com" alt=""><i className="large at icon rotate"></i></a>
+                    <a href="https://www.linkedin.com/in/inescsim/" alt="" target="_blank" rel="noopener noreferrer"><i className="large linkedin icon rotate"></i></a>
+                    <a href="https://github.com/inescsim" alt="" target="_blank" rel="noopener noreferrer"><i className="large github icon rotate"></i></a>
                 </p>
             </div>
             <div className="about-me-subsection">

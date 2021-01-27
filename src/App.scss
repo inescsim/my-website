@@ -18,6 +18,17 @@ nav {
   }
 }
 
+.rotate {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 a {
   color: #FED700;
 }
@@ -65,17 +76,21 @@ p {
   letter-spacing: 0.077778rem;
 }
 
-.yellow-rectangle {
+.welcome-image {
+  grid-area: 1 / 4 / 5 / 7;
   background-image: url("./files/2.jpg");
   background-size: cover;
-  grid-area: 1 / 2 / 4 / 7;
 }
 
 .welcome-subsection {
-  grid-area: 6 / 1 / 7 / 4;
+  grid-area: 4 / 1 / 7 / 4;
   
   p {
     font-size: 1.6rem;
+  }
+
+  a {
+    color: #C2B340;
   }
 }
 
@@ -154,7 +169,7 @@ p {
   width: 20%;
   padding: 10px;
   text-align: center;
-  border: 1px solid #FED700;
+  border: 2px solid #FED700;
 }
 
 .download-cv-btn:hover {
@@ -166,5 +181,26 @@ p {
 }
 
 .light-theme, .dark-theme {
-  height: 100vh;
+  height: 100%;
+}
+
+.light-theme {
+  background-color: white;
+}
+
+.dark-theme {
+  background-color: black;
+
+  h2, h4 {
+    color: white;
+    opacity: 70%;
+  }
+
+  p, .sun {
+    color: #B2AF92;
+  }
+
+  .welcome-image {
+    opacity: 0.9;
+  }
 }

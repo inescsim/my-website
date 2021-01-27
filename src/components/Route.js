@@ -5,6 +5,7 @@ const Route = ({ path, children }) => {
 
     const onLocationChange = () => {
         setCurrentPath(window.location.pathname);
+        window.scrollTo({top: 0, behavior: 'smooth'});
     };
 
     useEffect(() => {
