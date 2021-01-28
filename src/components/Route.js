@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 
-const Route = ({ path, children }) => {
+const Route = ({ path, setOnHomePage, children }) => {
     const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
     const onLocationChange = () => {
         setCurrentPath(window.location.pathname);
         window.scrollTo({top: 0, behavior: 'smooth'});
+        setOnHomePage(window.location.pathname === "/"); 
     };
 
     useEffect(() => {
