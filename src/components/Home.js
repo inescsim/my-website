@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from './Link';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -9,11 +9,10 @@ const Home = () => {
                 <div className="welcome-subsection">
                     <p>
                         I'm a software developer based in London, UK.<br></br>
-                        <Link href="/about">Learn more about me <i className="small chevron circle right icon"></i></Link>
+                        <Link to="/about">Learn more about me <i className="small chevron circle right icon"></i></Link>
                     </p>
                 </div>
             </div>
-            <div className="welcome-section-right"></div>
         </React.Fragment>
     );
 };

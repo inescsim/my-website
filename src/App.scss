@@ -82,24 +82,25 @@ nav, footer {
 }
 
 .welcome-section-left {
-  flex: 0 0 40vw;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin-top: 55%;
+  
   .welcome-text {
     letter-spacing: 0.077778rem;
   }
-
+  
   .welcome-subsection {
     margin-top: 5%;
-
+    
     p {
       font-size: 1.6rem;
     }
-  
+    
     a {
-      color: #C2B340;
+      color: #F8A472;
     }
   }
 }
@@ -191,35 +192,46 @@ nav, footer {
   opacity: 50%;
 }
 
-.home-background {
-  background-image: url("./files/2.jpg");
-  background-position: 100% 0;
-  background-size: 70% 100%;
-  background-repeat: no-repeat;
-}
-
 .light-theme {
   background-color: white;
+  background: -webkit-linear-gradient(360deg, white 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background: -o-linear-gradient(360deg, white 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background: -moz-linear-gradient(360deg, white 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background: linear-gradient(360deg, white 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background-size: cover;
+  background-position: 0% 60%;
 
   .about-me-icons i {
     color: #8D021F;
+  }
+
+  nav {
+    i {
+      color: #001717;
+    }
   }
 }
 
 .dark-theme {
   background-color: #001717;
+  background: -webkit-linear-gradient(360deg, #001717 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background: -o-linear-gradient(360deg, #001717 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background: -moz-linear-gradient(360deg, #001717 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background: linear-gradient(360deg, #001717 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
+  background-size: cover;
+  background-position: 0% 60%;
 
   h2, h4 {
-    color: white;
+    color: #F5F5F5;
   }
   
   h4 {
-    color: #fdfae5;
+    color: #F5F5F5;
     opacity: 90%;
   }
 
   p, .sun {
-    color: #fdfae5;
+    color: #F5F5F5;
     opacity: 90%;
   }
 
@@ -246,7 +258,7 @@ nav, footer {
   }
 
   .experience-item i {
-    color: #fdfae5;
+    color: #F5F5F5;
     opacity: 90%;
   }
 }
@@ -254,21 +266,6 @@ nav, footer {
 @media screen and (max-width:1300px) {
   .main-section-content { 
     flex-direction: column;
-  }
-
-  .home-background {
-    background-image: url("./files/3.jpg");
-    background-position: 100% 0;
-    background-size: 65% 100%;
-  }
-
-  .welcome-section-left { 
-    flex-basis: 100%;
-    
-    h2 {
-      font-size: 6.5rem;
-      line-height: 6.5rem;
-    }
   }
 
   .about-me-section {
@@ -305,34 +302,20 @@ nav, footer {
   }
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:650px) {
   .welcome-section-left { 
-    justify-content: flex-start;
-  }
-
-  .home-background {
-    background-image: url("./files/2.jpg");
-    background-position: 0 100%;
-    background-size: 100% 72%;
-  }
-
-  .dark-theme {
     h2 {
-      opacity: 80%;
+      font-size: 7.5rem;
+      line-height: 7.5rem;
     }
   }
 }
 
-@media screen and (max-width:600px) {
-  .home-background {
-    background-image: url("./files/3.jpg");
-    background-position: 0 100%;
-    background-size: 100% 72%;
-  }
-
-  .dark-theme {
+@media screen and (max-width:550px) {
+  .welcome-section-left { 
     h2 {
-      opacity: 80%;
+      font-size: 6rem;
+      line-height: 6rem;
     }
   }
 }
