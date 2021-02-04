@@ -105,6 +105,26 @@ nav, footer {
   }
 }
 
+.not-found-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h4 {
+    color: #001717 !important;
+  }
+
+  p {
+    color: #001717 !important;
+    font-size: 1.4rem;
+  }
+  
+  a {
+    color: #F8A472 !important;
+  }
+}
+
 .about-me-section {
   display: flex;
   flex: 1;
@@ -222,6 +242,12 @@ nav, footer {
   background: linear-gradient(360deg, #001717 50%, rgba(0, 0, 0, 0) 30%), url("./files/2.jpg");
   background-size: cover;
   background-position: 0% 60%;
+}
+
+.light-not-found-background, .dark-not-found-background {
+  background-image: url("./files/3.jpg");
+  background-size: cover;
+  background-position: 0% 70%;
 }
 
 .dark-theme {

@@ -5,6 +5,7 @@ import './App.scss';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Content from './components/Content';
+import NotFound from './components/NotFound';
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -30,6 +31,17 @@ function App() {
               darkTheme={darkTheme}
               setDarkTheme={setDarkTheme}
               componentToDisplay={<AboutMe/>}
+            />
+          )}
+        />
+        <Route 
+          path="*"
+          render={(props) => (
+            <Content {...props}
+              darkTheme={darkTheme}
+              setDarkTheme={setDarkTheme}
+              background="not-found-background"
+              componentToDisplay={<NotFound/>}
             />
           )}
         />
