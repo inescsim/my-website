@@ -21,6 +21,8 @@ function App() {
               setDarkTheme={setDarkTheme}
               background="home-background"
               componentToDisplay={<Home/>}
+              photoCreditAuthor="Maria Stewart"
+              photoID="EKrOmnkwABg"
             />
           )}
         />
@@ -42,6 +44,8 @@ function App() {
               setDarkTheme={setDarkTheme}
               background="not-found-background"
               componentToDisplay={<NotFound/>}
+              photoCreditAuthor="Paul Hanaoka"
+              photoID="LcAZcVWsCIo"
             />
           )}
         />

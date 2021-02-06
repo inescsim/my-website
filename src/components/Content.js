@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Content = ({ darkTheme, setDarkTheme, background, componentToDisplay }) => {
+const Content = ({ darkTheme, setDarkTheme, background, componentToDisplay, photoCreditAuthor, photoID }) => {
     const theme = darkTheme ? "dark" : "light";
     const themeIcon = darkTheme ? "sun" : "moon";
 
@@ -18,7 +18,11 @@ const Content = ({ darkTheme, setDarkTheme, background, componentToDisplay }) =>
               <div className="right-margin"></div>
               <div className="left-margin"></div>
           </div>
-          <footer></footer>
+          <footer>
+            { photoCreditAuthor ? 
+              <p>Photo by <a href={`https://unsplash.com/photos/${photoID}`} target="_blank" rel="noopener noreferrer">{photoCreditAuthor}</a></p>
+            : "" }
+          </footer>
         </div>
     );
 };

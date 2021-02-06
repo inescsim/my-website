@@ -39,7 +39,7 @@ const content = [
         title: "Ruby on Rails Internship",
         date: "Jul 2016 to Sep 2016",
         location: "Coimbra, Portugal",
-        description: ["Web application to pick movies to watch with friends, based on which movies everyone wants to watch."],
+        description: ["Web application to pick movies to watch with friends, based on which movies everyone on the group wants to watch."],
         company: "HYP",
         companyWebsite: "https://www.hyp.pt/",
         skills: "Ruby on Rails, Ruby, JavaScript",
