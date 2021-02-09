@@ -359,4 +359,29 @@ footer, nav, .main-section, .left-margin, .right-margin {
       line-height: 6rem;
     }
   }
+
+  .experience-subsection {
+    margin-top: 10%;
+  }
+
+  .download-cv-btn {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .welcome-section-left { 
+    h2 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    p {
+      font-size: 1.3rem !important;
+    }
+  }
+
+  .experience-subsection {
+    margin-top: 15%;
+  }
 }
