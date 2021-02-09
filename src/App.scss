@@ -321,6 +321,7 @@ footer, nav, .main-section, .left-margin, .right-margin {
 
   .about-me-subsection {
     flex-direction: column;
+    display: block;
   }
   
   .experience-subsection {
@@ -340,6 +341,7 @@ footer, nav, .main-section, .left-margin, .right-margin {
   
   .experience-item-icons {
     flex-direction: column;
+    margin-bottom: 15px;
   }
 }
 
