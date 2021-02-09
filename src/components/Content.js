@@ -8,8 +8,8 @@ const Content = ({ darkTheme, setDarkTheme, background, componentToDisplay, phot
     return (
         <div className={`${theme}-theme ${theme}-${background}`}>
             <nav className="navbar">
-                <Link to="/"><i className="large home icon rotate"></i></Link>
-                <i className={`large ${themeIcon} icon rotate`} onClick={() => setDarkTheme(!darkTheme)}></i>
+                <Link to="/"><i className="home icon rotate"></i></Link>
+                <i className={`${themeIcon} icon rotate`} onClick={() => setDarkTheme(!darkTheme)}></i>
             </nav>
             <div className="main-section">
               <div className="main-section-content">

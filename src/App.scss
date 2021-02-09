@@ -155,18 +155,18 @@ footer, nav, .main-section, .left-margin, .right-margin {
 
 .about-me-avatar {
   text-align: center;
-  margin-bottom: 30px;
-
+  margin-bottom: 5%;
+  
   img {
     width: 70%;
+    border-radius: 10px;
   }
 }
 
 .about-me-icons {
   display: flex;
-  flex: 1;
   justify-content: center;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .about-me-content {
@@ -211,18 +211,21 @@ footer, nav, .main-section, .left-margin, .right-margin {
   width: 20%;
   padding: 10px;
   text-align: center;
-  border: 2px solid #FED700;
+  border: 2px solid #C21E56;
+  border-radius: 4px;
+  color: #C21E56;
 }
 
 .download-cv-btn:hover {
   opacity: 0.5;
+  color: #C21E56;
 }
 
 .light-theme {
   background-color: white;
   
   .about-me-icons i {
-    color: #8D021F;
+    color: #C21E56;
   }
   
   nav {
@@ -231,7 +234,7 @@ footer, nav, .main-section, .left-margin, .right-margin {
     }
   }
 
-  footer a, a:hover {
+  footer a, footer a:hover {
     color: #F8A472;
   }
 }
@@ -295,7 +298,8 @@ footer, nav, .main-section, .left-margin, .right-margin {
   }
 
   .download-cv-btn {
-    border: 2px solid #008080;
+    border: 2px solid #F8A472;
+    color: #F8A472;
   }
 
   .experience-item i {
@@ -367,11 +371,15 @@ footer, nav, .main-section, .left-margin, .right-margin {
   }
 
   .download-cv-btn {
-    padding: 5px;
+    padding: 7px;
   }
 }
 
 @media screen and (max-width:450px) {
+  .left-margin, .right-margin {
+    flex: 0 0 0vw;
+  }
+
   .welcome-section-left { 
     h2 {
       font-size: 4rem;
@@ -381,9 +389,5 @@ footer, nav, .main-section, .left-margin, .right-margin {
     p {
       font-size: 1.3rem !important;
     }
-  }
-
-  .experience-subsection {
-    margin-top: 15%;
   }
 }
