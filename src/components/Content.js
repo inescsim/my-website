@@ -17,12 +17,12 @@ const Content = ({ darkTheme, setDarkTheme, background, componentToDisplay, phot
               </div>
               <div className="right-margin"></div>
               <div className="left-margin"></div>
-          </div>
-          <footer>
+            </div>
+            <footer>
             { photoCreditAuthor ? 
-              <p>Photo by <a href={`https://unsplash.com/photos/${photoID}`} target="_blank" rel="noopener noreferrer">{photoCreditAuthor}</a></p>
-            : "" }
-          </footer>
+                <p>Photo by <a href={`https://unsplash.com/photos/${photoID}`} target="_blank" rel="noopener noreferrer">{photoCreditAuthor}</a></p>
+              : "" }
+            </footer>
         </div>
     );
 };
