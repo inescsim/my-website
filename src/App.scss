@@ -312,6 +312,16 @@ footer, nav, .main-section, .left-margin, .right-margin {
     flex-direction: column;
   }
 
+  .welcome-section-left {
+    flex: 1;
+    margin-top: 46%;
+    margin-left: 0%;
+  }
+
+  .left-margin, .right-margin {
+    flex: 0 0 10vw;
+  }
+
   .about-me-section {
     margin: 0;
   }
