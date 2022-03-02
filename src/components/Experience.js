@@ -1,10 +1,21 @@
-import React from 'react';
-
 const content = [
+    {
+        id: "ga",
+        title: "Full Stack Developer",
+        date: "Mar 2021 - present",
+        location: "London, United Kingdom",
+        description: [
+            "At GetAgent, I'm building new features and improving existing code across the stack. I'm also responsible for managing and mentoring a few of my colleagues."
+        ],
+        company: "GetAgent",
+        companyWebsite: "https://www.getagent.co.uk/",
+        skills: "Koa.js, Bookshelf.js, Knex.js, Next.js, React, Chakra",
+        git: "GitHub"
+    },
     {
         id: "haplo",
         title: "Product Lead for Ethics Monitor",
-        date: "May 2019 to January 2021",
+        date: "May 2019 - January 2021",
         location: "London, United Kingdom",
         description: [
             "Product lead for Ethics Monitor, which helps universities streamline the review of applications for ethical approval.",
@@ -24,7 +35,7 @@ const content = [
     {
         id: "hyp18",
         title: "Software Developer",
-        date: "Sep 2018 to Jan 2019",
+        date: "Sep 2018 - Jan 2019",
         location: "Coimbra, Portugal",
         description: [
             "At HYP, I worked with a small team of developers and designers to develop BabyLoop, a platform to buy and sell used baby products (such as cribs, car seats, etc).",
@@ -43,7 +54,7 @@ const content = [
     {
         id: "os",
         title: "Junior Ruby Developer",
-        date: "Mar 2017 to Aug 2018",
+        date: "Mar 2017 - Aug 2018",
         location: "Coimbra, Portugal",
         description: [
             "At OneSource, I was tasked with developing an extension for SketchUp to optimize the structure of any building designed by the user using the program. This was done using SketchUp’s Ruby API and in collaboration with a team of civil engineers from the University of Coimbra.", 
@@ -58,7 +69,7 @@ const content = [
     {
         id: "hyp16",
         title: "Ruby on Rails Internship",
-        date: "Jul 2016 to Sep 2016",
+        date: "Jul 2016 - Sep 2016",
         location: "Coimbra, Portugal",
         description: ["Web application to pick movies to watch with friends, based on which movies everyone on the group wants to watch."],
         company: "HYP",
@@ -90,11 +101,7 @@ const Experience = () => {
         );
       });
 
-    return(
-        <React.Fragment>
-            {renderedExperienceItems}
-        </React.Fragment>
-    );
+    return renderedExperienceItems;
 };
 
 export default Experience;

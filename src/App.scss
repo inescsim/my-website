@@ -25,24 +25,17 @@ footer {
   justify-content: flex-end;
 }
 
-.rotate {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
-}
-
-.rotate:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
 a {
-  color: #FED700;
+  color: #95A72D;
 }
 
 a:hover {
-  color: #FED700;
-  opacity: 0.5;
+  color: #95A72D;
+  opacity: 0.8;
+}
+
+.icon:hover {
+  opacity: 0.7;
 }
 
 h2 {
@@ -113,10 +106,8 @@ footer, nav, .main-section, .left-margin, .right-margin {
 }
 
 .not-found-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 150px;
+  margin-left: 50px;
 
   h4 {
     color: #001717 !important;
@@ -159,7 +150,7 @@ footer, nav, .main-section, .left-margin, .right-margin {
   margin-bottom: 5%;
   
   img {
-    width: 50%;
+    max-width: 500px;
     border-radius: 10px;
   }
 }
@@ -210,23 +201,27 @@ footer, nav, .main-section, .left-margin, .right-margin {
   width: 20%;
   padding: 10px;
   text-align: center;
-  border: 2px solid #C21E56;
+  border: 2px solid #FEB302;
   border-radius: 4px;
-  color: #C21E56;
+  color: #FEB302;
 }
 
 .download-cv-btn:hover {
   opacity: 0.5;
-  color: #C21E56;
+  color: #FEB302;
 }
 
 .light-theme {
   background-color: white;
   
   .about-me-icons i {
-    color: #C21E56;
+    color: #E09D39;
   }
-  
+
+  h4, p {
+    color: #383722;
+  }
+
   nav {
     i {
       color: #001717;
@@ -342,10 +337,7 @@ footer, nav, .main-section, .left-margin, .right-margin {
   }
 
   .experience-title {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: 15px;
   }
 
   .download-cv {
