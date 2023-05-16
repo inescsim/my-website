@@ -14,8 +14,7 @@ const content = [
         ],
         company: "GetAgent",
         companyWebsite: "https://www.getagent.co.uk/",
-        skills: "Koa · MySQL · React · Next.js · Chakra · Figma · Trello · Asana · CustomerIO",
-        git: "GitHub"
+        skills: "Koa · MySQL · React · Next.js · Chakra · Figma · Trello · Asana · CustomerIO · GitHub"
     },
     {
         id: "haplo",
@@ -30,8 +29,7 @@ const content = [
         ],
         company: "Haplo",
         companyWebsite: "https://www.haplo.com/",
-        skills: "JavaScript · Trello",
-        git: "Fossil"
+        skills: "JavaScript · Trello · Fossil"
     },
     {
         id: "hyp18",
@@ -48,8 +46,7 @@ const content = [
         ],
         company: "HYP",
         companyWebsite: "https://www.hyp.pt/",
-        skills: "Ruby on Rails · PostgreSQL · jQuery · JavaScript · HTML · Trello",
-        git: "GitLab"
+        skills: "Ruby on Rails · PostgreSQL · jQuery · JavaScript · HTML · Trello · GitLab"
     },
     {
         id: "os",
@@ -63,8 +60,7 @@ const content = [
         ],
         company: "OneSource",
         companyWebsite: "https://www.onesource.pt/",
-        skills: "Ruby · HTML · jQuery · JavaScript · CSS · Postman · Trello",
-        git: "GitHub"
+        skills: "Ruby · HTML · jQuery · JavaScript · CSS · Postman · Trello · GitHub"
     }
 ];
 
@@ -83,7 +79,6 @@ const Experience = () => {
                     {c.description.map((d,i) => <p key={`experience-description-${i}`}>{d}</p>)}
                 </div>
                 <div className="experience-item-icons">
-                    <p><i className="code branch icon"></i>{c.git}</p>
                     <p><i className="file code icon"></i>{c.skills}</p>
                 </div>
             </div>
