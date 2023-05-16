@@ -2,14 +2,19 @@ const content = [
     {
         id: "ga",
         title: "Full Stack Developer",
-        date: "Mar 2021 - present",
+        date: "Mar 2021 - April 2023",
         location: "London, United Kingdom",
         description: [
-            "At GetAgent, I'm building new features and improving existing code across the stack. I'm also responsible for managing and mentoring a few of my colleagues."
+            "* Maintained and improved the product as a Full Stack Developer.",
+            "* Led a team of two developers in building a new product, collaborating with the Product Manager and Product Designer to generate ideas for new features based on user research, while ensuring technical feasibility.",
+            "* Made decisions on the architecture of new tasks.",
+            "* Performed final technical QA of teamwork and eventual release.",
+            "* Collaborated with other teams in the business (CRM, marketing, SEO, etc.).",
+            "* Provided mentorship and management to trainees and junior developers in order to improve their performance and productivity, as well as to assist with their career progression."
         ],
         company: "GetAgent",
         companyWebsite: "https://www.getagent.co.uk/",
-        skills: "Koa.js, Bookshelf.js, Knex.js, Next.js, React, Chakra",
+        skills: "Koa · MySQL · React · Next.js · Chakra · Figma · Trello · Asana · CustomerIO",
         git: "GitHub"
     },
     {
@@ -18,18 +23,14 @@ const content = [
         date: "May 2019 - January 2021",
         location: "London, United Kingdom",
         description: [
-            "Product lead for Ethics Monitor, which helps universities streamline the review of applications for ethical approval.",
-            "All products and client specific customisations were implemented as server-side JavaScript plugins, using Haplo's​ ​framework API​.",
-            "During my time at Haplo I:",
-            "* Worked closely with new clients throughout the process of building their custom application, from authentication setup to deployment.",
-            "* Provided support for existing clients.",
-            "* Mentored a colleague working on the same product.",
-            "* Worked alongside my colleagues to improve the product.",
-            "* Contributed to weekly discussions on the teams’ challenges and how to improve the way we worked."
+            "* Led the end-to-end development process for custom applications, from authentication setup to successful deployment, ensuring client satisfaction.",
+            "* Provided support to existing clients.",
+            "* Mentored a team member, resulting in improved skills and contributions to the product.",
+            "* Actively participated in weekly discussions on team challenges. "
         ],
         company: "Haplo",
         companyWebsite: "https://www.haplo.com/",
-        skills: "JavaScript",
+        skills: "JavaScript · Trello",
         git: "Fossil"
     },
     {
@@ -38,17 +39,16 @@ const content = [
         date: "Sep 2018 - Jan 2019",
         location: "Coimbra, Portugal",
         description: [
-            "At HYP, I worked with a small team of developers and designers to develop BabyLoop, a platform to buy and sell used baby products (such as cribs, car seats, etc).",
-            "My responsabilities included (but where not limited to):",
-            "* Building several components of the website, including search and product pages.",
-            "* Creating an API to be consumed by the mobile app, using Ruby on Rails API.",
-            "* Building the payments’ process (using the SIBS API) as well as invoice generation (using the InvoiceExpress API).",
-            "* Configuring emails and the jobs to send them, using Rails’ Active Jobs.",
-            "* Building an admin back office, to manage the content of the platform, using rails_admin."
+            "* Collaborated with a team of developers and designers to create and launch BabyLoop, a successful platform for buying and selling used baby products.",
+            "* Implemented various website components, including search and product pages, for a seamless user experience.",
+            "* Built the payments process and invoice generation using SIBS API and InvoiceExpress API respectively.",
+            "* Configured email jobs within Rails' Active Jobs to streamline communication processes.",
+            "* Utilised Ruby on Rails API to develop an API consumed by the mobile app.",
+            "* Developed an admin back office using rails_admin to efficiently manage platform content."
         ],
         company: "HYP",
         companyWebsite: "https://www.hyp.pt/",
-        skills: "Ruby on Rails, Ruby, JavaScript, jQuery, HTML, Postman",
+        skills: "Ruby on Rails · PostgreSQL · jQuery · JavaScript · HTML · Trello",
         git: "GitLab"
     },
     {
@@ -57,25 +57,14 @@ const content = [
         date: "Mar 2017 - Aug 2018",
         location: "Coimbra, Portugal",
         description: [
-            "At OneSource, I was tasked with developing an extension for SketchUp to optimize the structure of any building designed by the user using the program. This was done using SketchUp’s Ruby API and in collaboration with a team of civil engineers from the University of Coimbra.", 
-            "As the only developer on the team, I was responsible for meetings with the client as well as reviewing and merging the code created by the civil engineers’ team, making sure it worked seamlessly with the general extension code.",
-            "The extension ran as a script inside SketchUp’s Ruby environment. I developed the HTML and CSS, as well as the backend of the app (which dealt with calculations, interaction with the database, API calls, etc). Authentication and database download/update were made using AJAX requests to OneSource’s servers, where the information was stored."
+            "* Developed a SketchUp extension in collaboration with civil engineers from the University of Coimbra to optimize building structures, using SketchUp’s Ruby API.",
+            "* Acted as the lead developer on the project and managed meetings with clients while reviewing and merging code from the civil engineering team for seamless integration.",
+            "* Led the development of the app interface as well as backend functionality, including calculations, database interaction, and API calls."
         ],
         company: "OneSource",
         companyWebsite: "https://www.onesource.pt/",
-        skills: "Ruby, JavaScript, HTML, CSS, jQuery, Postman",
+        skills: "Ruby · HTML · jQuery · JavaScript · CSS · Postman · Trello",
         git: "GitHub"
-    },
-    {
-        id: "hyp16",
-        title: "Ruby on Rails Internship",
-        date: "Jul 2016 - Sep 2016",
-        location: "Coimbra, Portugal",
-        description: ["Web application to pick movies to watch with friends, based on which movies everyone on the group wants to watch."],
-        company: "HYP",
-        companyWebsite: "https://www.hyp.pt/",
-        skills: "Ruby on Rails, Ruby, JavaScript, HTML, CSS",
-        git: "GitLab"
     }
 ];
 
